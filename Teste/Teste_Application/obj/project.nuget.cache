@@ -1,7 +1,7 @@
 {
   "version": 2,
-  "dgSpecHash": "l2sYQ1zt89lgrzLBJK/8BQeJvwdlZmCtNzQshiedGUlqRh/8qzl2lky34rjr4AiqA8a8xsG/yAfafJ1k/ptUWA==",
-  "success": false,
+  "dgSpecHash": "EP6hexRzJ7lZrTKN2v2mZPL74iqryGpqrCaziw/I6Yp3DOWq12X2nU49LedYLrvigrdB/KPbhA/8liPM/Cu2Qg==",
+  "success": true,
   "projectFilePath": "C:\\Users\\andre\\source\\repos\\andreoliveiralima\\Teste\\Teste\\Teste_Application\\Teste_Application.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\andre\\.nuget\\packages\\microsoft.extensions.apidescription.server\\3.0.0\\microsoft.extensions.apidescription.server.3.0.0.nupkg.sha512",
@@ -12,15 +12,5 @@
     "C:\\Users\\andre\\.nuget\\packages\\swashbuckle.aspnetcore.swaggergen\\6.3.1\\swashbuckle.aspnetcore.swaggergen.6.3.1.nupkg.sha512",
     "C:\\Users\\andre\\.nuget\\packages\\swashbuckle.aspnetcore.swaggerui\\6.3.1\\swashbuckle.aspnetcore.swaggerui.6.3.1.nupkg.sha512"
   ],
-  "logs": [
-    {
-      "code": "NU1201",
-      "level": "Error",
-      "message": "O projeto Teste_Domain não é compatível com netcoreapp3.1 (.NETCoreApp,Version=v3.1). O projeto Teste_Domain dá suporte a: net6.0 (.NETCoreApp,Version=v6.0)",
-      "libraryId": "Teste_Domain",
-      "targetGraphs": [
-        ".NETCoreApp,Version=v3.1"
-      ]
-    }
-  ]
+  "logs": []
 }

@@ -79,16 +79,6 @@
         "frameworkReferences": [
           "Microsoft.AspNetCore.App"
         ]
-      },
-      "Teste_Domain/1.0.0": {
-        "type": "project",
-        "framework": "Unsupported,Version=v0.0",
-        "compile": {
-          "bin/placeholder/Teste_Domain.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/Teste_Domain.dll": {}
-        }
       }
     }
   },
@@ -297,18 +287,12 @@
         "swashbuckle.aspnetcore.swaggerui.6.3.1.nupkg.sha512",
         "swashbuckle.aspnetcore.swaggerui.nuspec"
       ]
-    },
-    "Teste_Domain/1.0.0": {
-      "type": "project",
-      "path": "../Teste_Domain/Teste_Domain.csproj",
-      "msbuildProject": "../Teste_Domain/Teste_Domain.csproj"
     }
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v3.1": [
       "Microsoft.VisualStudio.Azure.Containers.Tools.Targets >= 1.15.1",
-      "Swashbuckle.AspNetCore >= 6.3.1",
-      "Teste_Domain >= 1.0.0"
+      "Swashbuckle.AspNetCore >= 6.3.1"
     ]
   },
   "packageFolders": {
@@ -342,11 +326,7 @@
       "frameworks": {
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
-          "projectReferences": {
-            "C:\\Users\\andre\\source\\repos\\andreoliveiralima\\Teste\\Teste\\Teste_Domain\\Teste_Domain.csproj": {
-              "projectPath": "C:\\Users\\andre\\source\\repos\\andreoliveiralima\\Teste\\Teste\\Teste_Domain\\Teste_Domain.csproj"
-            }
-          }
+          "projectReferences": {}
         }
       },
       "warningProperties": {
@@ -389,16 +369,5 @@
         "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.300\\RuntimeIdentifierGraph.json"
       }
     }
-  },
-  "logs": [
-    {
-      "code": "NU1201",
-      "level": "Error",
-      "message": "O projeto Teste_Domain não é compatível com netcoreapp3.1 (.NETCoreApp,Version=v3.1). O projeto Teste_Domain dá suporte a: net6.0 (.NETCoreApp,Version=v6.0)",
-      "libraryId": "Teste_Domain",
-      "targetGraphs": [
-        ".NETCoreApp,Version=v3.1"
-      ]
-    }
-  ]
+  }
 }
