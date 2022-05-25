@@ -1,0 +1,13 @@
+C:\Users\andre\source\repos\andreoliveiralima\Teste\Teste\Teste_Infra.Data\bin\Debug\netcoreapp3.1\Teste_Infra.Data.deps.json
+C:\Users\andre\source\repos\andreoliveiralima\Teste\Teste\Teste_Infra.Data\bin\Debug\netcoreapp3.1\Teste_Infra.Data.dll
+C:\Users\andre\source\repos\andreoliveiralima\Teste\Teste\Teste_Infra.Data\bin\Debug\netcoreapp3.1\Teste_Infra.Data.pdb
+C:\Users\andre\source\repos\andreoliveiralima\Teste\Teste\Teste_Infra.Data\bin\Debug\netcoreapp3.1\Teste_Domain.dll
+C:\Users\andre\source\repos\andreoliveiralima\Teste\Teste\Teste_Infra.Data\bin\Debug\netcoreapp3.1\Teste_Domain.pdb
+C:\Users\andre\source\repos\andreoliveiralima\Teste\Teste\Teste_Infra.Data\obj\Debug\netcoreapp3.1\Teste_Infra.Data.csproj.AssemblyReference.cache
+C:\Users\andre\source\repos\andreoliveiralima\Teste\Teste\Teste_Infra.Data\obj\Debug\netcoreapp3.1\Teste_Infra.Data.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\andre\source\repos\andreoliveiralima\Teste\Teste\Teste_Infra.Data\obj\Debug\netcoreapp3.1\Teste_Infra.Data.AssemblyInfoInputs.cache
+C:\Users\andre\source\repos\andreoliveiralima\Teste\Teste\Teste_Infra.Data\obj\Debug\netcoreapp3.1\Teste_Infra.Data.AssemblyInfo.cs
+C:\Users\andre\source\repos\andreoliveiralima\Teste\Teste\Teste_Infra.Data\obj\Debug\netcoreapp3.1\Teste_Infra.Data.csproj.CoreCompileInputs.cache
+C:\Users\andre\source\repos\andreoliveiralima\Teste\Teste\Teste_Infra.Data\obj\Debug\netcoreapp3.1\Teste_Infra.Data.csproj.CopyComplete
+C:\Users\andre\source\repos\andreoliveiralima\Teste\Teste\Teste_Infra.Data\obj\Debug\netcoreapp3.1\Teste_Infra.Data.dll
+C:\Users\andre\source\repos\andreoliveiralima\Teste\Teste\Teste_Infra.Data\obj\Debug\netcoreapp3.1\Teste_Infra.Data.pdb

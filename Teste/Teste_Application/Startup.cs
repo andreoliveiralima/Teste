@@ -11,6 +11,8 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Teste_Domain.Interfaces;
+using Teste_Infra.Data.Repository;
 
 namespace Teste_Application
 {
@@ -29,6 +31,8 @@ namespace Teste_Application
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddCors();
+
+            services.AddSingleton<IPapelNegociado, PapelNegociadoRepository>();
 
             services.AddControllers();
 
