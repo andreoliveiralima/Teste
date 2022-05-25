@@ -1,0 +1,12 @@
+C:\Users\andre\source\repos\andreoliveiralima\Teste\Teste\Teste_Domain\bin\Debug\net6.0\Teste_Domain.deps.json
+C:\Users\andre\source\repos\andreoliveiralima\Teste\Teste\Teste_Domain\bin\Debug\net6.0\Teste_Domain.dll
+C:\Users\andre\source\repos\andreoliveiralima\Teste\Teste\Teste_Domain\bin\Debug\net6.0\Teste_Domain.pdb
+C:\Users\andre\source\repos\andreoliveiralima\Teste\Teste\Teste_Domain\obj\Debug\net6.0\Teste_Domain.csproj.AssemblyReference.cache
+C:\Users\andre\source\repos\andreoliveiralima\Teste\Teste\Teste_Domain\obj\Debug\net6.0\Teste_Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\andre\source\repos\andreoliveiralima\Teste\Teste\Teste_Domain\obj\Debug\net6.0\Teste_Domain.AssemblyInfoInputs.cache
+C:\Users\andre\source\repos\andreoliveiralima\Teste\Teste\Teste_Domain\obj\Debug\net6.0\Teste_Domain.AssemblyInfo.cs
+C:\Users\andre\source\repos\andreoliveiralima\Teste\Teste\Teste_Domain\obj\Debug\net6.0\Teste_Domain.csproj.CoreCompileInputs.cache
+C:\Users\andre\source\repos\andreoliveiralima\Teste\Teste\Teste_Domain\obj\Debug\net6.0\Teste_Domain.dll
+C:\Users\andre\source\repos\andreoliveiralima\Teste\Teste\Teste_Domain\obj\Debug\net6.0\refint\Teste_Domain.dll
+C:\Users\andre\source\repos\andreoliveiralima\Teste\Teste\Teste_Domain\obj\Debug\net6.0\Teste_Domain.pdb
+C:\Users\andre\source\repos\andreoliveiralima\Teste\Teste\Teste_Domain\obj\Debug\net6.0\ref\Teste_Domain.dll
