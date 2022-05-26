@@ -7,5 +7,6 @@
         public string Empresa { get; set; }
 
         public decimal Valor { get; set; }
+        public int idEmpresa { get; set; }
     }
 }

@@ -10,7 +10,9 @@ using Microsoft.OpenApi.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Net.Http.Headers;
 using System.Threading.Tasks;
+using Teste_CrossCutting;
 using Teste_Domain.Interfaces;
 using Teste_Infra.Data.Repository;
 
@@ -33,6 +35,7 @@ namespace Teste_Application
             services.AddCors();
 
             services.AddSingleton<IPapelNegociado, PapelNegociadoRepository>();
+            services.AddSingleton<IEmpresa, Empresa>();
 
             services.AddControllers();
 
@@ -43,6 +46,13 @@ namespace Teste_Application
                     Title = "Teste",
                     Version = "v1"
                 });
+            });
+
+            services.AddHttpClient("MyHttpClient", httpClient =>
+            {
+                httpClient.DefaultRequestHeaders.Accept.Clear();
+                httpClient.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
+
             });
         }
 

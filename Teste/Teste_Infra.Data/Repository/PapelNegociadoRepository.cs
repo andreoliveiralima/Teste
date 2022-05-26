@@ -18,16 +18,16 @@ namespace Teste_Infra.Data.Repository
         {
             try
             {
-                var sql = @"select p.papel, vp.valor
+                var sql = @"select p.papel, vp.valor, p.idEmpresa
                             from papel p inner join valorpapel vp on p.id = vp.idpapel 
                             where p.papel = @PAPEL 
                             and vp.dtInsert = (select max(vp.dtInsert) from 
                             papel p inner join valorpapel vp on p.id = vp.idpapel 
-                            where p.papel = @PAPEL)
-                            group by p.papel, vp.valor;";
+                            where p.papel = @PAPEL);";
                 DynamicParameters parameters = new DynamicParameters();
                 parameters.Add("@PAPEL", papelNegociadoRequest.Papel, DbType.String);
                 var retorno = await Pesquisar<PapelNegociadoResponse>(sql, parameters);
+                
                 return retorno;
             }
             catch (Exception ex)

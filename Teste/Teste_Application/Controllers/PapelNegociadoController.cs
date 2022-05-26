@@ -17,11 +17,14 @@ namespace Teste_Application.Controllers
     {
         private readonly ILogger<PapelNegociadoController> _logger;
         private readonly IPapelNegociado _papelNegociacao;
+        private readonly IEmpresa _empresa;
 
-        public PapelNegociadoController(ILogger<PapelNegociadoController> logger, IPapelNegociado papelNegociado)
+
+        public PapelNegociadoController(ILogger<PapelNegociadoController> logger, IPapelNegociado papelNegociado, IEmpresa empresa)
         {
             _logger = logger;
             _papelNegociacao = papelNegociado;
+            _empresa = empresa; 
         }
 
         [HttpGet]
@@ -32,6 +35,15 @@ namespace Teste_Application.Controllers
         public async Task<IActionResult> Get([FromQuery] PapelNegociadoRequest request)
         {
             var retorno = await _papelNegociacao.GetPapelNegociado(request);
+            if (retorno.Any())
+            {
+                var empresa = await _empresa.GetEmpresa(retorno.FirstOrDefault().idEmpresa);
+                if(empresa.NomeEmpresa != "")
+                {
+                    retorno.FirstOrDefault().Empresa = empresa.NomeEmpresa;
+                }
+            }
+            
             return Ok(retorno);
         }
     }

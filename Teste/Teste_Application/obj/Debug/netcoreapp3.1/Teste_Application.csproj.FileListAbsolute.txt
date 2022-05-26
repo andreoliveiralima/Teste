@@ -15,7 +15,6 @@ C:\Users\andre\source\repos\andreoliveiralima\Teste\Teste\Teste_Application\obj\
 C:\Users\andre\source\repos\andreoliveiralima\Teste\Teste\Teste_Application\obj\Debug\netcoreapp3.1\Teste_Application.AssemblyInfoInputs.cache
 C:\Users\andre\source\repos\andreoliveiralima\Teste\Teste\Teste_Application\obj\Debug\netcoreapp3.1\Teste_Application.AssemblyInfo.cs
 C:\Users\andre\source\repos\andreoliveiralima\Teste\Teste\Teste_Application\obj\Debug\netcoreapp3.1\Teste_Application.csproj.CoreCompileInputs.cache
-C:\Users\andre\source\repos\andreoliveiralima\Teste\Teste\Teste_Application\obj\Debug\netcoreapp3.1\Teste_Application.MvcApplicationPartsAssemblyInfo.cs
 C:\Users\andre\source\repos\andreoliveiralima\Teste\Teste\Teste_Application\obj\Debug\netcoreapp3.1\Teste_Application.MvcApplicationPartsAssemblyInfo.cache
 C:\Users\andre\source\repos\andreoliveiralima\Teste\Teste\Teste_Application\obj\Debug\netcoreapp3.1\staticwebassets\Teste_Application.StaticWebAssets.Manifest.cache
 C:\Users\andre\source\repos\andreoliveiralima\Teste\Teste\Teste_Application\obj\Debug\netcoreapp3.1\Teste_Application.RazorTargetAssemblyInfo.cache
@@ -46,3 +45,15 @@ C:\Users\andre\source\repos\andreoliveiralima\Teste\Teste\Teste_Application\bin\
 C:\Users\andre\source\repos\andreoliveiralima\Teste\Teste\Teste_Application\bin\Debug\netcoreapp3.1\Teste_Infra.Data.dll
 C:\Users\andre\source\repos\andreoliveiralima\Teste\Teste\Teste_Application\bin\Debug\netcoreapp3.1\Teste_Infra.Data.pdb
 C:\Users\andre\source\repos\andreoliveiralima\Teste\Teste\Teste_Application\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.Annotations.dll
+C:\Users\andre\source\repos\andreoliveiralima\Teste\Teste\Teste_Application\bin\Debug\netcoreapp3.1\Microsoft.Extensions.DependencyInjection.dll
+C:\Users\andre\source\repos\andreoliveiralima\Teste\Teste\Teste_Application\bin\Debug\netcoreapp3.1\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\andre\source\repos\andreoliveiralima\Teste\Teste\Teste_Application\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Http.dll
+C:\Users\andre\source\repos\andreoliveiralima\Teste\Teste\Teste_Application\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Logging.dll
+C:\Users\andre\source\repos\andreoliveiralima\Teste\Teste\Teste_Application\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\andre\source\repos\andreoliveiralima\Teste\Teste\Teste_Application\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Options.dll
+C:\Users\andre\source\repos\andreoliveiralima\Teste\Teste\Teste_Application\bin\Debug\netcoreapp3.1\Polly.dll
+C:\Users\andre\source\repos\andreoliveiralima\Teste\Teste\Teste_Application\bin\Debug\netcoreapp3.1\Polly.Extensions.Http.dll
+C:\Users\andre\source\repos\andreoliveiralima\Teste\Teste\Teste_Application\bin\Debug\netcoreapp3.1\RestSharp.dll
+C:\Users\andre\source\repos\andreoliveiralima\Teste\Teste\Teste_Application\bin\Debug\netcoreapp3.1\System.Diagnostics.DiagnosticSource.dll
+C:\Users\andre\source\repos\andreoliveiralima\Teste\Teste\Teste_Application\bin\Debug\netcoreapp3.1\Teste_CrossCutting.dll
+C:\Users\andre\source\repos\andreoliveiralima\Teste\Teste\Teste_Application\bin\Debug\netcoreapp3.1\Teste_CrossCutting.pdb
