@@ -1,8 +1,10 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
+using Swashbuckle.AspNetCore.Annotations;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Net;
 using System.Threading.Tasks;
 using Teste_Domain.Entities;
 using Teste_Domain.Interfaces;
@@ -23,20 +25,14 @@ namespace Teste_Application.Controllers
         }
 
         [HttpGet]
-        //[Route("{papel:string}")]
-        public async Task<IActionResult> Get([FromBody] PapelNegociadoRequest request)
+        [Route("get-valor-papel")]
+        [SwaggerResponse((int)HttpStatusCode.OK, Type = typeof(PapelNegociadoResponse))]
+        [SwaggerResponse((int)HttpStatusCode.BadRequest)]
+        [SwaggerResponse((int)HttpStatusCode.InternalServerError)]
+        public async Task<IActionResult> Get([FromQuery] PapelNegociadoRequest request)
         {
-            //PapelNegociadoRequest pNr = new PapelNegociadoRequest();
-            //pNr.Papel = papel;
-            var retorno = _papelNegociacao.GetPapelNegociado(request);
+            var retorno = await _papelNegociacao.GetPapelNegociado(request);
             return Ok(retorno);
         }
-
-        //[HttpGet]
-        //public IActionResult Get([FromBody] PapelNegociadoRequest papelRequest)
-        //{
-        //    var retorno = _papelNegociacao.GetPapelNegociado(papelRequest);
-        //    return Ok(retorno);
-        //}
     }
 }

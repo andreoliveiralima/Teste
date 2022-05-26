@@ -68,6 +68,25 @@ namespace Teste_Infra.Data.Context
             }
         }
 
+        protected async Task<IEnumerable<T>> Pesquisar<T>(string query, object parametros)
+        {
+            using (var conexao = ObterConexao())
+            {
+                IEnumerable<T> retorno;
+                try
+                {
+                    retorno = await conexao.QueryAsync<T>(query, param: parametros);
+                    conexao.Close();
+
+                    return retorno;
+                }
+                catch (Exception ex)
+                {
+                    throw new Exception(ex.Message);
+                }
+            }
+        }
+
         protected IEnumerable<T> Pesquisar<T>(Dictionary<string, object> query)
         {
             IEnumerable<T> resultado = null;

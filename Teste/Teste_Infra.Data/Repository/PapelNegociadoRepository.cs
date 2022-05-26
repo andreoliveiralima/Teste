@@ -14,7 +14,7 @@ namespace Teste_Infra.Data.Repository
 {
     public  class PapelNegociadoRepository : AcessoDados, IPapelNegociado
     {
-        public IEnumerable<PapelNegociadoResponse> GetPapelNegociado(PapelNegociadoRequest papelNegociadoRequest)
+        public async Task<IEnumerable<PapelNegociadoResponse>> GetPapelNegociado(PapelNegociadoRequest papelNegociadoRequest)
         {
             try
             {
@@ -23,16 +23,15 @@ namespace Teste_Infra.Data.Repository
                             where p.papel = @PAPEL 
                             and vp.dtInsert = (select max(vp.dtInsert) from 
                             papel p inner join valorpapel vp on p.id = vp.idpapel 
-                            where p.papel = 'PETR1')
+                            where p.papel = @PAPEL)
                             group by p.papel, vp.valor;";
                 DynamicParameters parameters = new DynamicParameters();
                 parameters.Add("@PAPEL", papelNegociadoRequest.Papel, DbType.String);
-                var retorno = ExecutarComRetorno<PapelNegociadoResponse>(sql, parameters);
+                var retorno = await Pesquisar<PapelNegociadoResponse>(sql, parameters);
                 return retorno;
             }
             catch (Exception ex)
             {
-
                 throw new Exception(ex.Message);
             }
             finally

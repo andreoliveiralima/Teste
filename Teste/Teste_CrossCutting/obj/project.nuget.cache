@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "2UFVvGQ3MzP7OK7xyUdnlvAriDd3cu7x/HVQND2hLJlJe7huII5/pZcRqG0aH9B5wwhtTNsOFgccoPc+E4mHRQ==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\andre\\source\\repos\\andreoliveiralima\\Teste\\Teste\\Teste_CrossCutting\\Teste_CrossCutting.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\andre\\.nuget\\packages\\polly\\7.2.3\\polly.7.2.3.nupkg.sha512"
+  ],
+  "logs": []
+}

@@ -45,3 +45,4 @@ C:\Users\andre\source\repos\andreoliveiralima\Teste\Teste\Teste_Application\bin\
 C:\Users\andre\source\repos\andreoliveiralima\Teste\Teste\Teste_Application\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
 C:\Users\andre\source\repos\andreoliveiralima\Teste\Teste\Teste_Application\bin\Debug\netcoreapp3.1\Teste_Infra.Data.dll
 C:\Users\andre\source\repos\andreoliveiralima\Teste\Teste\Teste_Application\bin\Debug\netcoreapp3.1\Teste_Infra.Data.pdb
+C:\Users\andre\source\repos\andreoliveiralima\Teste\Teste\Teste_Application\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.Annotations.dll

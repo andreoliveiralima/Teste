@@ -6,6 +6,6 @@ namespace Teste_Domain.Interfaces
 {
     public interface IPapelNegociado
     {
-        IEnumerable<PapelNegociadoResponse> GetPapelNegociado(PapelNegociadoRequest papelNegociadoRequest);
+        Task<IEnumerable<PapelNegociadoResponse>> GetPapelNegociado(PapelNegociadoRequest papelNegociadoRequest);
     }
 }
