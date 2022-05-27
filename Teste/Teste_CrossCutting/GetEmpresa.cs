@@ -40,7 +40,7 @@ namespace Teste_CrossCutting
                 var response = await CreateRetryPolicyAsync<EmpresaResponse>().ExecuteAsync(async () =>
                 {
                     var client = new RestClient(_baseUrl + id);
-                    var request = new RestRequest("", Method.GET);
+                    var request = new RestRequest("", Method.POST);
 
                     client.ExecuteAsync<EmpresaResponse>(request, (res, handler) =>
                     {
