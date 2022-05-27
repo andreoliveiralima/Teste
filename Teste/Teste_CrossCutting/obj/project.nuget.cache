@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "L0+lctak8X6LS2LVKfQr4emMc4nuaHmCsc0vbF+TwccGzFtRyrNAAdvoIPfMojeZu/NNG6+HxKmnR+OMi1b/RQ==",
+  "dgSpecHash": "9tBzAP/qC06XIcoJmiN3obu12D9WgoqR86aHgZPS/RbqY5pZM3dbqWu6ccWE/jktYQKIhycyYF4AGUZDp+HFNw==",
   "success": true,
   "projectFilePath": "C:\\Users\\andre\\source\\repos\\andreoliveiralima\\Teste\\Teste\\Teste_CrossCutting\\Teste_CrossCutting.csproj",
   "expectedPackageFiles": [
@@ -20,7 +20,8 @@
     "C:\\Users\\andre\\.nuget\\packages\\microsoft.extensions.primitives\\6.0.0\\microsoft.extensions.primitives.6.0.0.nupkg.sha512",
     "C:\\Users\\andre\\.nuget\\packages\\polly\\7.2.3\\polly.7.2.3.nupkg.sha512",
     "C:\\Users\\andre\\.nuget\\packages\\polly.extensions.http\\3.0.0\\polly.extensions.http.3.0.0.nupkg.sha512",
-    "C:\\Users\\andre\\.nuget\\packages\\restsharp\\107.3.0\\restsharp.107.3.0.nupkg.sha512",
+    "C:\\Users\\andre\\.nuget\\packages\\restsharp\\106.6.10\\restsharp.106.6.10.nupkg.sha512",
+    "C:\\Users\\andre\\.nuget\\packages\\serilog\\2.11.0\\serilog.2.11.0.nupkg.sha512",
     "C:\\Users\\andre\\.nuget\\packages\\system.buffers\\4.5.1\\system.buffers.4.5.1.nupkg.sha512",
     "C:\\Users\\andre\\.nuget\\packages\\system.diagnostics.diagnosticsource\\6.0.0\\system.diagnostics.diagnosticsource.6.0.0.nupkg.sha512",
     "C:\\Users\\andre\\.nuget\\packages\\system.memory\\4.5.4\\system.memory.4.5.4.nupkg.sha512",

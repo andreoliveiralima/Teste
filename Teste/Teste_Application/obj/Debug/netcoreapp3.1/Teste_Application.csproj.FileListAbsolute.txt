@@ -57,3 +57,15 @@ C:\Users\andre\source\repos\andreoliveiralima\Teste\Teste\Teste_Application\bin\
 C:\Users\andre\source\repos\andreoliveiralima\Teste\Teste\Teste_Application\bin\Debug\netcoreapp3.1\System.Diagnostics.DiagnosticSource.dll
 C:\Users\andre\source\repos\andreoliveiralima\Teste\Teste\Teste_Application\bin\Debug\netcoreapp3.1\Teste_CrossCutting.dll
 C:\Users\andre\source\repos\andreoliveiralima\Teste\Teste\Teste_Application\bin\Debug\netcoreapp3.1\Teste_CrossCutting.pdb
+C:\Users\andre\source\repos\andreoliveiralima\Teste\Teste\Teste_Application\bin\Debug\netcoreapp3.1\Serilog.dll
+C:\Users\andre\source\repos\andreoliveiralima\Teste\Teste\Teste_Application\obj\Debug\netcoreapp3.1\Teste_Application.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\andre\source\repos\andreoliveiralima\Teste\Teste\Teste_Application\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Users\andre\source\repos\andreoliveiralima\Teste\Teste\Teste_Application\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\andre\source\repos\andreoliveiralima\Teste\Teste\Teste_Application\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Logging.dll
+C:\Users\andre\source\repos\andreoliveiralima\Teste\Teste\Teste_Application\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Protocols.dll
+C:\Users\andre\source\repos\andreoliveiralima\Teste\Teste\Teste_Application\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\andre\source\repos\andreoliveiralima\Teste\Teste\Teste_Application\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Tokens.dll
+C:\Users\andre\source\repos\andreoliveiralima\Teste\Teste\Teste_Application\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
+C:\Users\andre\source\repos\andreoliveiralima\Teste\Teste\Teste_Application\bin\Debug\netcoreapp3.1\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\andre\source\repos\andreoliveiralima\Teste\Teste\Teste_Application\bin\Debug\netcoreapp3.1\Teste_Service.dll
+C:\Users\andre\source\repos\andreoliveiralima\Teste\Teste\Teste_Application\bin\Debug\netcoreapp3.1\Teste_Service.pdb
