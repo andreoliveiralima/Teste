@@ -25,7 +25,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Teste_Infra.Data", "Teste_I
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Teste_CrossCutting", "Teste_CrossCutting\Teste_CrossCutting.csproj", "{9ED6668B-5D8F-47E5-8004-1409657652F1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Teste_Service", "Teste_Service\Teste_Service.csproj", "{7005D303-4558-4A2B-B0AF-218CB852178B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Teste_Service", "Teste_Service\Teste_Service.csproj", "{7005D303-4558-4A2B-B0AF-218CB852178B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
