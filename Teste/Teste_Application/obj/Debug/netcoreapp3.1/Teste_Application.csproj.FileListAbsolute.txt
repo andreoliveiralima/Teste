@@ -69,3 +69,13 @@ C:\Users\andre\source\repos\andreoliveiralima\Teste\Teste\Teste_Application\bin\
 C:\Users\andre\source\repos\andreoliveiralima\Teste\Teste\Teste_Application\bin\Debug\netcoreapp3.1\System.IdentityModel.Tokens.Jwt.dll
 C:\Users\andre\source\repos\andreoliveiralima\Teste\Teste\Teste_Application\bin\Debug\netcoreapp3.1\Teste_Service.dll
 C:\Users\andre\source\repos\andreoliveiralima\Teste\Teste\Teste_Application\bin\Debug\netcoreapp3.1\Teste_Service.pdb
+C:\Users\andre\source\repos\andreoliveiralima\Teste\Teste\Teste_Application\bin\Debug\netcoreapp3.1\Microsoft.Extensions.DependencyModel.dll
+C:\Users\andre\source\repos\andreoliveiralima\Teste\Teste\Teste_Application\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Hosting.Abstractions.dll
+C:\Users\andre\source\repos\andreoliveiralima\Teste\Teste\Teste_Application\bin\Debug\netcoreapp3.1\Serilog.AspNetCore.dll
+C:\Users\andre\source\repos\andreoliveiralima\Teste\Teste\Teste_Application\bin\Debug\netcoreapp3.1\Serilog.Extensions.Hosting.dll
+C:\Users\andre\source\repos\andreoliveiralima\Teste\Teste\Teste_Application\bin\Debug\netcoreapp3.1\Serilog.Extensions.Logging.dll
+C:\Users\andre\source\repos\andreoliveiralima\Teste\Teste\Teste_Application\bin\Debug\netcoreapp3.1\Serilog.Formatting.Compact.dll
+C:\Users\andre\source\repos\andreoliveiralima\Teste\Teste\Teste_Application\bin\Debug\netcoreapp3.1\Serilog.Settings.Configuration.dll
+C:\Users\andre\source\repos\andreoliveiralima\Teste\Teste\Teste_Application\bin\Debug\netcoreapp3.1\Serilog.Sinks.Console.dll
+C:\Users\andre\source\repos\andreoliveiralima\Teste\Teste\Teste_Application\bin\Debug\netcoreapp3.1\Serilog.Sinks.Debug.dll
+C:\Users\andre\source\repos\andreoliveiralima\Teste\Teste\Teste_Application\bin\Debug\netcoreapp3.1\Serilog.Sinks.File.dll

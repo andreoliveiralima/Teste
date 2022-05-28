@@ -4,7 +4,6 @@ using Microsoft.Extensions.Logging;
 using Serilog;
 using Swashbuckle.AspNetCore.Annotations;
 using System;
-using System.Collections.Generic;
 using System.Linq;
 using System.Net;
 using System.Threading.Tasks;

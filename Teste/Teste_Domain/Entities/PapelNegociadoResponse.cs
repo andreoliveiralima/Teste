@@ -1,5 +1,8 @@
-﻿namespace Teste_Domain.Entities
+﻿using System.Diagnostics.CodeAnalysis;
+
+namespace Teste_Domain.Entities
 {
+    [ExcludeFromCodeCoverage]
     public class PapelNegociadoResponse
     {
         public string Papel { get; set; }
