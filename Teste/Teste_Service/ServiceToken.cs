@@ -11,15 +11,23 @@ namespace Teste_Service.Services
     {
         public async Task<string> GenerateToken()
         {
-            var tokenHandler = new JwtSecurityTokenHandler();
-            var key = Encoding.ASCII.GetBytes(Settings.Secret);     
-            var tokenDescriptor = new SecurityTokenDescriptor
+            try
             {
-                Expires = DateTime.UtcNow.AddSeconds(30),
-                SigningCredentials = new SigningCredentials(new SymmetricSecurityKey(key), SecurityAlgorithms.HmacSha256Signature)
-            };
-            var token = tokenHandler.CreateToken(tokenDescriptor);
-            return tokenHandler.WriteToken(token);
+                var tokenHandler = new JwtSecurityTokenHandler();
+                var key = Encoding.ASCII.GetBytes(Settings.Secret);
+                var tokenDescriptor = new SecurityTokenDescriptor
+                {
+                    Expires = DateTime.UtcNow.AddSeconds(30),
+                    SigningCredentials = new SigningCredentials(new SymmetricSecurityKey(key), SecurityAlgorithms.HmacSha256Signature)
+                };
+                var token = tokenHandler.CreateToken(tokenDescriptor);
+                return tokenHandler.WriteToken(token);
+            }
+            catch (Exception ex)
+            {
+
+                throw(ex);
+            }
         }
     }
 }

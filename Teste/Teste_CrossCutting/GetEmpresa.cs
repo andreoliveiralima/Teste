@@ -13,6 +13,7 @@ using Teste_Domain.Interfaces;
 using System.Text.Json;
 using Serilog;
 using RestSharp;
+using Microsoft.Extensions.Logging;
 
 namespace Teste_CrossCutting
 {
@@ -20,8 +21,8 @@ namespace Teste_CrossCutting
     {
         private string _baseUrl;
         public IHttpClientFactory _HttpClientFactory;
-        private readonly AsyncRetryPolicy _retryPolicy;
-        public Empresa(IHttpClientFactory HttpClientFactory)
+        private readonly ILogger<Empresa> _logger;
+        public Empresa(IHttpClientFactory HttpClientFactory, ILogger<Empresa> logger)
         {
             IConfiguration _config = new ConfigurationBuilder()
                 .SetBasePath(AppDomain.CurrentDomain.BaseDirectory)
@@ -30,11 +31,13 @@ namespace Teste_CrossCutting
 
             _baseUrl = _config.GetSection("BaseUrl").Value;
             _HttpClientFactory = HttpClientFactory;
+            _logger = logger;
         }
         public async Task<EmpresaResponse> GetEmpresa(int id)
         {
             try
             {
+                _logger.LogInformation($"Solicitado dados da empresa: {id}...");
                 var tsc = new TaskCompletionSource<IRestResponse<EmpresaResponse>>();
 
                 var response = await CreateRetryPolicyAsync<EmpresaResponse>().ExecuteAsync(async () =>
@@ -50,6 +53,15 @@ namespace Teste_CrossCutting
                     return await tsc.Task;
                 });
 
+                if (response.Data!= null && !string.IsNullOrEmpty(response.Data.NomeEmpresa))
+                {
+                    _logger.LogInformation($"...Dados empresa: {response.Data.NomeEmpresa} localizados...");
+                }
+                else
+                {
+                    _logger.LogInformation($"...Dados empresa: {response.Data.NomeEmpresa} não localizados...");
+                }
+                
                 return response.Data;
 
 

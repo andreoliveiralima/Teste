@@ -39,18 +39,19 @@ namespace Teste_Application.Controllers
         {
             try
             {
+                _logger.LogInformation($"Solicitado dados para o papel: {request.Papel}");
                 var retorno = await _papelNegociacao.GetPapelNegociado(request);
                 if (retorno.Any())
                 {
                     var empresa = await _empresa.GetEmpresa(retorno.FirstOrDefault().idEmpresa);
                     retorno.FirstOrDefault().Empresa = empresa?.NomeEmpresa;
                 }
-
+                _logger.LogInformation($"Dados do papel: {request.Papel} - Valor: {retorno.FirstOrDefault()?.Valor} - Empresa: {retorno.FirstOrDefault()?.Empresa}");
                 return Ok(retorno);
             }
             catch (Exception ex)
             {
-                Log.Logger.Information($"Erro: {ex.Message}");
+                _logger.LogError($"Erro: {ex.Message}");
                 return BadRequest("Erro Interno");
             }
             
@@ -65,12 +66,14 @@ namespace Teste_Application.Controllers
         {
             try
             {
-                var retorno = await _serviceToken.GenerateToken();
+                _logger.LogInformation($"Token solicitado...");
+                var retorno = "Bearer " + await _serviceToken.GenerateToken();
+                _logger.LogInformation($"...Token gerado com sucesso");
                 return Ok(retorno);
             }
             catch (Exception ex)
             {
-                Log.Logger.Information($"Erro: {ex.Message}");
+                _logger.LogError($"Erro: {ex.Message}");
                 return BadRequest("Erro Interno");
             }
 

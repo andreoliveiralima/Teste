@@ -32,7 +32,7 @@ namespace Teste_Infra.Data.Repository
             }
             catch (Exception ex)
             {
-                throw new Exception(ex.Message);
+                throw(ex);
             }
             finally
             {

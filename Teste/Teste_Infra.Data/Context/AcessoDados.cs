@@ -27,7 +27,7 @@ namespace Teste_Infra.Data.Context
             }
             catch (Exception ex)
             {
-                throw new Exception(ex.Message);
+                throw(ex);
             }
         }
 
@@ -45,7 +45,7 @@ namespace Teste_Infra.Data.Context
                 }
                 catch (Exception ex)
                 {
-                    throw new Exception(ex.Message);
+                    throw(ex);
                 }
             }
         }
