@@ -43,7 +43,7 @@ namespace Teste_CrossCutting
                 var response = await CreateRetryPolicyAsync<EmpresaResponse>().ExecuteAsync(async () =>
                 {
                     var client = new RestClient(_baseUrl + id);
-                    var request = new RestRequest("", Method.POST);
+                    var request = new RestRequest("", Method.GET);
 
                     client.ExecuteAsync<EmpresaResponse>(request, (res, handler) =>
                     {
@@ -77,7 +77,7 @@ namespace Teste_CrossCutting
             return Policy
                   .Handle<Exception>().Or<AggregateException>()
                   .OrResult<IRestResponse<T>>(r => (int)r.StatusCode == 500)
-                  .WaitAndRetryAsync(5, times => TimeSpan.FromSeconds(1), onRetry: (exception, retryCount, context) =>
+                  .WaitAndRetryAsync(5, times => TimeSpan.FromSeconds(2), onRetry: (exception, retryCount, context) =>
                   {
                       Log.Logger.Information($"Retry count {retryCount}. Exception: {exception}", retryCount, exception.Exception.Message);
                   });
