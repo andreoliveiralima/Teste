@@ -33,9 +33,9 @@ namespace Teste_Application
         {
             services.AddCors();
 
-            services.AddSingleton<IPapelNegociado, PapelNegociadoRepository>();
-            services.AddSingleton<IEmpresa, Empresa>();
-            services.AddSingleton<IServiceToken, ServiceToken>();
+            services.AddScoped<IPapelNegociado, PapelNegociadoRepository>();
+            services.AddScoped<IEmpresa, Empresa>();
+            services.AddScoped<IServiceToken, ServiceToken>();
 
             services.AddControllers();
 
