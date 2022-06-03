@@ -69,6 +69,10 @@
               "target": "Package",
               "version": "[1.15.1, )"
             },
+            "Refit.HttpClientFactory": {
+              "target": "Package",
+              "version": "[6.3.2, )"
+            },
             "Serilog.AspNetCore": {
               "target": "Package",
               "version": "[5.0.0, )"
@@ -164,6 +168,10 @@
               "target": "Package",
               "version": "[6.0.0, )"
             },
+            "Microsoft.Extensions.Http.Polly": {
+              "target": "Package",
+              "version": "[6.0.5, )"
+            },
             "Polly": {
               "target": "Package",
               "version": "[7.2.3, )"
@@ -179,6 +187,10 @@
             "Serilog": {
               "target": "Package",
               "version": "[2.11.0, )"
+            },
+            "System.Net.Http.Json": {
+              "target": "Package",
+              "version": "[6.0.0, )"
             }
           },
           "imports": [
@@ -239,6 +251,12 @@
       "frameworks": {
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
+          "dependencies": {
+            "Refit": {
+              "target": "Package",
+              "version": "[6.3.2, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
@@ -368,6 +386,9 @@
             "projectReferences": {
               "C:\\Users\\andre\\source\\repos\\andreoliveiralima\\Teste\\Teste\\Teste_Domain\\Teste_Domain.csproj": {
                 "projectPath": "C:\\Users\\andre\\source\\repos\\andreoliveiralima\\Teste\\Teste\\Teste_Domain\\Teste_Domain.csproj"
+              },
+              "C:\\Users\\andre\\source\\repos\\andreoliveiralima\\Teste\\Teste\\Teste_Infra.Data\\Teste_Infra.Data.csproj": {
+                "projectPath": "C:\\Users\\andre\\source\\repos\\andreoliveiralima\\Teste\\Teste\\Teste_Infra.Data\\Teste_Infra.Data.csproj"
               }
             }
           }

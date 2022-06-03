@@ -4,6 +4,7 @@ using System.IdentityModel.Tokens.Jwt;
 using System.Text;
 using System.Threading.Tasks;
 using Teste_Domain.Interfaces;
+using Teste_Service.Configuration;
 
 namespace Teste_Service.Services
 {

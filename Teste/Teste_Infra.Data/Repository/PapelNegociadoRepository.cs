@@ -1,20 +1,22 @@
 ﻿using Dapper;
-using Microsoft.Win32.SafeHandles;
 using System;
 using System.Collections.Generic;
 using System.Data;
-using System.Runtime.InteropServices;
-using System.Text;
-using System.Threading.Tasks;
 using Teste_Domain.Entities;
 using Teste_Domain.Interfaces;
-using Teste_Infra.Data.Context;
 
 namespace Teste_Infra.Data.Repository
 {
-    public  class PapelNegociadoRepository : AcessoDados, IPapelNegociado
+    public  class PapelNegociadoRepository: IPapelNegociado
     {
-        public async Task<IEnumerable<PapelNegociadoResponse>> GetPapelNegociado(PapelNegociadoRequest papelNegociadoRequest)
+        private readonly IAcessoDados _iAcessoDados;
+
+        public PapelNegociadoRepository(IAcessoDados iAcessoDados)
+        {
+            _iAcessoDados = iAcessoDados;
+        }
+
+        public IEnumerable<PapelNegociadoResponse> GetPapelNegociado(PapelNegociadoRequest papelNegociadoRequest)
         {
             try
             {
@@ -26,48 +28,14 @@ namespace Teste_Infra.Data.Repository
                             where p.papel = @PAPEL);";
                 DynamicParameters parameters = new DynamicParameters();
                 parameters.Add("@PAPEL", papelNegociadoRequest.Papel, DbType.String);
-                var retorno = await Pesquisar<PapelNegociadoResponse>(sql, parameters);
-                
+
+                var retorno = _iAcessoDados.Pesquisar<PapelNegociadoResponse>(sql, parameters);
                 return retorno;
             }
             catch (Exception ex)
             {
                 throw(ex);
             }
-            finally
-            {
-                Dispose();
-            }
         }
-
-        #region IDisposable Support
-        private bool disposedValue = false;
-        SafeHandle handle = new SafeFileHandle(IntPtr.Zero, true);
-
-        protected virtual void Dispose(bool disposing)
-        {
-            if (disposedValue)
-                return;
-
-            if (disposing)
-            {
-                handle.Dispose();
-            }
-
-            disposedValue = true;
-        }
-
-
-        ~PapelNegociadoRepository()
-        {
-            Dispose(false);
-        }
-
-        public void Dispose()
-        {
-            Dispose(true);
-            GC.SuppressFinalize(this);
-        }
-        #endregion
     }
 }

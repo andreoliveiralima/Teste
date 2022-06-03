@@ -1,8 +1,17 @@
 {
   "version": 2,
-  "dgSpecHash": "HCcjiUW0zMUYSGYUdWD7vaJaiVSYRcSd2WpdBvwM0GFQD5A428DGl4w7gF6JtM89B1Kk+zNw91/FV/4kc7axFg==",
+  "dgSpecHash": "ozxXT5oRTpZdT/vPm9LejOf1pMrSfrs5IqAout/o+EW1nDRd2u6ZFVV07BdLf4lFirYg+0cpameebL7itqJMQQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\andre\\source\\repos\\andreoliveiralima\\Teste\\Teste\\Teste_Domain\\Teste_Domain.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\andre\\.nuget\\packages\\refit\\6.3.2\\refit.6.3.2.nupkg.sha512",
+    "C:\\Users\\andre\\.nuget\\packages\\system.buffers\\4.5.1\\system.buffers.4.5.1.nupkg.sha512",
+    "C:\\Users\\andre\\.nuget\\packages\\system.memory\\4.5.4\\system.memory.4.5.4.nupkg.sha512",
+    "C:\\Users\\andre\\.nuget\\packages\\system.net.http.json\\6.0.0\\system.net.http.json.6.0.0.nupkg.sha512",
+    "C:\\Users\\andre\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\6.0.0\\system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512",
+    "C:\\Users\\andre\\.nuget\\packages\\system.text.encodings.web\\6.0.0\\system.text.encodings.web.6.0.0.nupkg.sha512",
+    "C:\\Users\\andre\\.nuget\\packages\\system.text.json\\6.0.1\\system.text.json.6.0.1.nupkg.sha512",
+    "C:\\Users\\andre\\.nuget\\packages\\system.threading.tasks.extensions\\4.5.4\\system.threading.tasks.extensions.4.5.4.nupkg.sha512"
+  ],
   "logs": []
 }

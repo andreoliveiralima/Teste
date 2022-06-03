@@ -1,4 +1,4 @@
-﻿namespace Teste_Service
+﻿namespace Teste_Service.Configuration
 {
     public class Settings
     {

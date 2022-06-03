@@ -7,8 +7,10 @@ using System;
 using System.Linq;
 using System.Net;
 using System.Threading.Tasks;
+using Teste_Domain.Abstractions;
 using Teste_Domain.Entities;
 using Teste_Domain.Interfaces;
+using Teste_Infra.Data.Repository;
 
 namespace Teste_Application.Controllers
 {
@@ -17,16 +19,18 @@ namespace Teste_Application.Controllers
     public class PapelNegociadoController : ControllerBase
     {
         private readonly ILogger<PapelNegociadoController> _logger;
-        private readonly IPapelNegociado _papelNegociacao;
+        private readonly IPapelNegociado _papelNegociado;
         private readonly IEmpresa _empresa;
+        private readonly IEmpresaRefit _empresaRefit;
         private readonly IServiceToken _serviceToken;
 
-        public PapelNegociadoController(ILogger<PapelNegociadoController> logger, IPapelNegociado papelNegociado, IEmpresa empresa, IServiceToken serviceToken)
+        public PapelNegociadoController(ILogger<PapelNegociadoController> logger, IPapelNegociado papelNegociado, IEmpresa empresa, IServiceToken serviceToken, IEmpresaRefit iEmpresaRefit)
         {
             _logger = logger;
-            _papelNegociacao = papelNegociado;
+            _papelNegociado = papelNegociado;
             _empresa = empresa;
             _serviceToken = serviceToken;
+            _empresaRefit = iEmpresaRefit;
         }
 
         [HttpGet]
@@ -40,11 +44,12 @@ namespace Teste_Application.Controllers
             try
             {
                 _logger.LogInformation($"Solicitado dados para o papel: {request.Papel}");
-                var retorno = await _papelNegociacao.GetPapelNegociado(request);
+                var retorno = _papelNegociado.GetPapelNegociado(request);
+
                 if (retorno.Any())
                 {
                     var empresa = await _empresa.GetEmpresa(retorno.FirstOrDefault().idEmpresa);
-                    retorno.FirstOrDefault().Empresa = empresa?.NomeEmpresa;
+                    retorno.FirstOrDefault().Empresa = empresa.NomeEmpresa;
                 }
                 _logger.LogInformation($"Dados do papel: {request.Papel} - Valor: {retorno.FirstOrDefault()?.Valor} - Empresa: {retorno.FirstOrDefault()?.Empresa}");
                 return Ok(retorno);
@@ -54,7 +59,39 @@ namespace Teste_Application.Controllers
                 _logger.LogError($"Erro: {ex.Message}");
                 return BadRequest("Erro Interno");
             }
-            
+        }
+
+        [HttpGet]
+        [Route("get-valor-papel-refit")]
+        [Authorize]
+        [SwaggerResponse((int)HttpStatusCode.OK, Type = typeof(PapelNegociadoResponse))]
+        [SwaggerResponse((int)HttpStatusCode.BadRequest)]
+        [SwaggerResponse((int)HttpStatusCode.InternalServerError)]
+        public async Task<IActionResult> GetRefit([FromQuery] PapelNegociadoRequest request)
+        {
+            try
+            {
+                _logger.LogInformation($"Solicitado dados para o papel: {request.Papel}");
+                var retorno = _papelNegociado.GetPapelNegociado(request);
+
+                if (retorno.Any())
+                {
+                    var empresa = await _empresaRefit.GetEmpresaRefit(retorno.FirstOrDefault().idEmpresa);
+
+                    retorno.FirstOrDefault().Empresa = empresa.NomeEmpresa;
+
+                }
+
+
+
+                _logger.LogInformation($"Dados do papel: {request.Papel} - Valor: {retorno.FirstOrDefault()?.Valor} - Empresa: {retorno.FirstOrDefault()?.Empresa}");
+                return Ok(retorno);
+            }
+            catch (Exception ex)
+            {
+                _logger.LogError($"Erro: {ex.Message}");
+                return BadRequest("Erro Interno");
+            }
         }
 
         [HttpGet]

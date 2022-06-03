@@ -151,10 +151,10 @@ C:\Users\andre\source\repos\andreoliveiralima\Teste\Teste\Test_API\bin\Debug\net
 C:\Users\andre\source\repos\andreoliveiralima\Teste\Teste\Test_API\bin\Debug\netcoreapp3.1\Teste_Infra.Data.dll
 C:\Users\andre\source\repos\andreoliveiralima\Teste\Teste\Test_API\bin\Debug\netcoreapp3.1\Teste_Service.dll
 C:\Users\andre\source\repos\andreoliveiralima\Teste\Teste\Test_API\bin\Debug\netcoreapp3.1\Teste_Application.pdb
+C:\Users\andre\source\repos\andreoliveiralima\Teste\Teste\Test_API\bin\Debug\netcoreapp3.1\Teste_Service.pdb
 C:\Users\andre\source\repos\andreoliveiralima\Teste\Teste\Test_API\bin\Debug\netcoreapp3.1\Teste_CrossCutting.pdb
 C:\Users\andre\source\repos\andreoliveiralima\Teste\Teste\Test_API\bin\Debug\netcoreapp3.1\Teste_Domain.pdb
 C:\Users\andre\source\repos\andreoliveiralima\Teste\Teste\Test_API\bin\Debug\netcoreapp3.1\Teste_Infra.Data.pdb
-C:\Users\andre\source\repos\andreoliveiralima\Teste\Teste\Test_API\bin\Debug\netcoreapp3.1\Teste_Service.pdb
 C:\Users\andre\source\repos\andreoliveiralima\Teste\Teste\Test_API\obj\Debug\netcoreapp3.1\Test_API.csproj.AssemblyReference.cache
 C:\Users\andre\source\repos\andreoliveiralima\Teste\Teste\Test_API\obj\Debug\netcoreapp3.1\Test_API.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\andre\source\repos\andreoliveiralima\Teste\Teste\Test_API\obj\Debug\netcoreapp3.1\Test_API.AssemblyInfoInputs.cache
@@ -164,3 +164,7 @@ C:\Users\andre\source\repos\andreoliveiralima\Teste\Teste\Test_API\obj\Debug\net
 C:\Users\andre\source\repos\andreoliveiralima\Teste\Teste\Test_API\obj\Debug\netcoreapp3.1\Test_API.dll
 C:\Users\andre\source\repos\andreoliveiralima\Teste\Teste\Test_API\obj\Debug\netcoreapp3.1\Test_API.pdb
 C:\Users\andre\source\repos\andreoliveiralima\Teste\Teste\Test_API\obj\Debug\netcoreapp3.1\Test_API.genruntimeconfig.cache
+C:\Users\andre\source\repos\andreoliveiralima\Teste\Teste\Test_API\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Http.Polly.dll
+C:\Users\andre\source\repos\andreoliveiralima\Teste\Teste\Test_API\bin\Debug\netcoreapp3.1\Refit.dll
+C:\Users\andre\source\repos\andreoliveiralima\Teste\Teste\Test_API\bin\Debug\netcoreapp3.1\Refit.HttpClientFactory.dll
+C:\Users\andre\source\repos\andreoliveiralima\Teste\Teste\Test_API\bin\Debug\netcoreapp3.1\System.Net.Http.Json.dll

@@ -2,7 +2,9 @@ C:\Users\andre\source\repos\andreoliveiralima\Teste\Teste\Teste_Service\bin\Debu
 C:\Users\andre\source\repos\andreoliveiralima\Teste\Teste\Teste_Service\bin\Debug\netcoreapp3.1\Teste_Service.dll
 C:\Users\andre\source\repos\andreoliveiralima\Teste\Teste\Teste_Service\bin\Debug\netcoreapp3.1\Teste_Service.pdb
 C:\Users\andre\source\repos\andreoliveiralima\Teste\Teste\Teste_Service\bin\Debug\netcoreapp3.1\Teste_Domain.dll
+C:\Users\andre\source\repos\andreoliveiralima\Teste\Teste\Teste_Service\bin\Debug\netcoreapp3.1\Teste_Infra.Data.dll
 C:\Users\andre\source\repos\andreoliveiralima\Teste\Teste\Teste_Service\bin\Debug\netcoreapp3.1\Teste_Domain.pdb
+C:\Users\andre\source\repos\andreoliveiralima\Teste\Teste\Teste_Service\bin\Debug\netcoreapp3.1\Teste_Infra.Data.pdb
 C:\Users\andre\source\repos\andreoliveiralima\Teste\Teste\Teste_Service\obj\Debug\netcoreapp3.1\Teste_Service.csproj.AssemblyReference.cache
 C:\Users\andre\source\repos\andreoliveiralima\Teste\Teste\Teste_Service\obj\Debug\netcoreapp3.1\Teste_Service.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\andre\source\repos\andreoliveiralima\Teste\Teste\Teste_Service\obj\Debug\netcoreapp3.1\Teste_Service.AssemblyInfoInputs.cache

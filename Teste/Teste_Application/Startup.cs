@@ -4,15 +4,20 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using Microsoft.Extensions.Options;
 using Microsoft.IdentityModel.Tokens;
 using Microsoft.OpenApi.Models;
+using Polly;
+using Polly.Extensions.Http;
 using System;
-using System.Net.Http.Headers;
 using System.Text;
 using Teste_CrossCutting;
+using Teste_Domain.Abstractions;
+using Teste_Domain.Entities;
 using Teste_Domain.Interfaces;
+using Teste_Infra.Data.Context;
 using Teste_Infra.Data.Repository;
-using Teste_Service;
+using Teste_Service.Configuration;
 using Teste_Service.Services;
 
 namespace Teste_Application
@@ -20,22 +25,30 @@ namespace Teste_Application
     public class Startup
     {
         private const string _applicationName = "Teste";
+        private const int _tentativas = 5;
+        private TimeSpan retryWait = TimeSpan.FromSeconds(2);
+        public IConfiguration _configuration { get; }
 
         public Startup(IConfiguration configuration)
         {
-            Configuration = configuration;
+            _configuration = configuration;
         }
-
-        public IConfiguration Configuration { get; }
-
         
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddCors();
 
+            services.Configure<ApiConfig>(_configuration.GetSection(nameof(ApiConfig)));
+            services.Configure<AcessoDadosConfig>(_configuration.GetSection(nameof(AcessoDadosConfig)));
+
+            services.AddSingleton<IApiConfig>(x => x.GetRequiredService<IOptions<ApiConfig>>().Value);
+            services.AddSingleton<IAcessoDadosConfig>(x => x.GetRequiredService<IOptions<AcessoDadosConfig>>().Value);
+
             services.AddScoped<IPapelNegociado, PapelNegociadoRepository>();
             services.AddScoped<IEmpresa, Empresa>();
+            services.AddScoped<IEmpresaRefit, EmpresaRefit>();
             services.AddScoped<IServiceToken, ServiceToken>();
+            services.AddScoped<IAcessoDados, AcessoDados>();
 
             services.AddControllers();
 
@@ -73,13 +86,6 @@ namespace Teste_Application
                 });
             });
 
-            services.AddHttpClient("MyHttpClient", httpClient =>
-            {
-                httpClient.DefaultRequestHeaders.Accept.Clear();
-                httpClient.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
-
-            });
-
             var key = Encoding.ASCII.GetBytes(Settings.Secret);
             services.AddAuthentication(x =>
             {
@@ -97,7 +103,15 @@ namespace Teste_Application
                     ValidateIssuer = false,
                     ValidateAudience = false
                 };
-            }); 
+            });
+
+            var tentativa = 1;
+            var retryPolicy = HttpPolicyExtensions.HandleTransientHttpError()
+                .WaitAndRetryAsync(_tentativas, retryAttemp => retryWait);
+
+            services.AddHttpClient<IEmpresaResponse, EmpresaResponse>(c =>
+            c.BaseAddress = new Uri(_configuration["ApiConfig:BaseUrl"]))
+                .AddPolicyHandler(retryPolicy);
         }
 
         

@@ -1,3 +1,4 @@
+using Moq;
 using System.Threading.Tasks;
 using Teste_Domain.Entities;
 using Teste_Domain.Interfaces;
@@ -9,10 +10,12 @@ namespace Test_API.Repository
     public class RepositoryTest
     {
         private readonly IPapelNegociado _papelNegociado;
+        private readonly Mock<IAcessoDados> _acessoDadosMock;
         
         public RepositoryTest()
         {
-            _papelNegociado = new PapelNegociadoRepository();
+            _acessoDadosMock = new Mock<IAcessoDados>();
+            _papelNegociado = new PapelNegociadoRepository(_acessoDadosMock.Object);
         }
 
         [Theory(DisplayName = "Sucesso")]
@@ -24,12 +27,12 @@ namespace Test_API.Repository
         {
             var papelNegociado = new PapelNegociadoRequest() { Papel = papel };
 
-            var response = await _papelNegociado.GetPapelNegociado(papelNegociado);
+            var result = _papelNegociado.GetPapelNegociado(papelNegociado);
 
-            Assert.NotNull(response);
+            Assert.NotNull(result);
 
         }
 
-        
+
     }
 }
